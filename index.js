@@ -5,13 +5,12 @@
  * Returns (via Callback):
  *   - An error, if any (nullable)
  *   - The IP address as a string (null if error). Example: "162.245.144.188"
- */
+
 
 const { fetchMyIP } = require("./iss.js");
 const { fetchCoordsByIP } = require("./iss.js");
 const { fetchISSFlyOverTimes } = require("./iss.js");
 
-/*
 fetchMyIP((error, IP) => {
   if (error) {
     console.log("It didn't work!", error);
